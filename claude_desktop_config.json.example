@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "graph-api": {
+      "command": "C:\\Users\\nunnt\\OneDrive\\Desktop\\MCP_Graph_API\\.venv\\Scripts\\python",
+      "args": [
+        "C:\\Users\\nunnt\\OneDrive\\Desktop\\MCP_Graph_API\\main.py"
+      ],
+      "env": {
+        "PYTHONPATH": "C:\\Users\\nunnt\\OneDrive\\Desktop\\MCP_Graph_API",
+        "CLIENT_ID": "${CLIENT_ID}",
+        "CLIENT_SECRET": "${CLIENT_SECRET}",
+        "TENANT_ID": "${TENANT_ID}",
+        "AUTHORITY": "https://login.microsoftonline.com/${TENANT_ID}",
+        "SCOPE": "https://graph.microsoft.com/.default"
+      }
+    }
+  }
+} 

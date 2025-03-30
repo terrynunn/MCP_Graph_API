@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "email": {
+      "command": "C:\\Users\\nunnt\\OneDrive\\Desktop\\MCP_Graph_API\\run_mcp_server.bat",
+      "args": [],
+      "env": {
+        "PYTHONPATH": "C:\\Users\\nunnt\\OneDrive\\Desktop\\MCP_Graph_API"
+      }
+    }
+  }
+} 
