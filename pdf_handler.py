@@ -8,12 +8,16 @@ class PDFHandler:
     
     def parse_pdf(self, pdf_data):
         """Parse text content from a PDF document.
-        
+
         Args:
             pdf_data: Raw PDF data as bytes or a file path
-            
+
         Returns:
-            Extracted text content as a string
+            dict: A dictionary with the following keys:
+                - ``text``: Extracted text content as a single string.
+                - ``pages``: Number of pages in the PDF.
+                - ``success``: ``True`` if extraction succeeded, ``False`` otherwise.
+                - ``error`` (optional): Error message when ``success`` is ``False``.
         """
         if isinstance(pdf_data, str) and Path(pdf_data).exists():
             # Handle file path
@@ -27,12 +31,16 @@ class PDFHandler:
     
     def _extract_text_from_pdf(self, pdf_file):
         """Extract text content from a PDF file object.
-        
+
         Args:
             pdf_file: A file object containing PDF data
-            
+
         Returns:
-            Extracted text content as a string
+            dict: A dictionary with the following keys:
+                - ``text``: Extracted text content as a single string.
+                - ``pages``: Number of pages in the PDF.
+                - ``success``: ``True`` if extraction succeeded, ``False`` otherwise.
+                - ``error`` (optional): Error message when ``success`` is ``False``.
         """
         text = ""
         
