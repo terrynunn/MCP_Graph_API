@@ -12,9 +12,9 @@ def get_email_info() -> dict:
     """Get information about the email functionality and credentials status"""
     # Check if credentials are available
     has_credentials = all([
-        os.environ.get("CLIENT_ID"),
-        os.environ.get("CLIENT_SECRET"),
-        os.environ.get("TENANT_ID"),
+        os.environ.get("MICROSOFT_CLIENT_ID"),
+        os.environ.get("MICROSOFT_CLIENT_SECRET"),
+        os.environ.get("MICROSOFT_TENANT_ID"),
         os.environ.get("AUTHORITY"),
         os.environ.get("SCOPE")
     ])
