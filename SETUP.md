@@ -14,7 +14,7 @@ This guide provides detailed instructions for setting up the MCP Graph API serve
 1. Sign in to the [Azure Portal](https://portal.azure.com)
 2. Navigate to "Azure Active Directory" > "App registrations" > "New registration"
 3. Name your application (e.g., "MCP Graph API")
-4. Set the redirect URI to `http://localhost:8000/auth/callback` (for local development)
+4. Set the redirect URI to `http://localhost:5000/auth/callback` (for local development)
 5. Click "Register"
 
 ### Configure API Permissions
